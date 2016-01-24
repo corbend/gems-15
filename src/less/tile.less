@@ -1,0 +1,26 @@
+
+.tile {
+	color: white;
+	border: 1px solid darken(@tile-background-color, 20%);
+	border-radius: 10px;	
+	margin: 6px;
+	width: @tile-width - 8px;
+	height: @tile-width - 9px;
+	background: @tile-background-color;
+	padding: 0px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	&-title {
+		display: inline-block;
+		font-family: Verdana;
+		text-align: center;
+		letter-spacing: 0.01em;
+		font-size: 68px;
+		padding-top: 10px;
+		font-weight: 800px;
+	}
+	&:nth-child(4n) {
+		margin-right: 10px;
+	}
+}

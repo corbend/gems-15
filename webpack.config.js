@@ -15,18 +15,18 @@ module.exports = {
 	module: {
 		loaders: [
 			{
-				test: /\.js$/,
+				test: /\.jsx?$/,
 				loader: 'babel-loader',
 				include: [
 			        path.resolve(__dirname, "src"),
 			    ],
-				// query: {
-				// 	presets: ['es2015']
-				// }
+				query: {
+					presets: ['es2015', 'react', 'stage-0']
+				}
 			},
 			{
         		test: /\.less$/,
-        		loader: "style!css!autoprefixer!less"
+        		loader: "style!css!less"
       		},
 		]
 	},
